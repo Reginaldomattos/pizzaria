@@ -85,12 +85,13 @@ public class Pagamento {
 
     }
 
+    // Método para validar o pagamento
+    public void validarPagamento(Double valorTotalPedido) {
+        if (this.valorPago < valorTotalPedido) {
+            throw new IllegalArgumentException("O valor pago não pode ser menor que o valor total do pedido.");
 
-
-
-
-
-
+        }
+    }
 
 
 }
