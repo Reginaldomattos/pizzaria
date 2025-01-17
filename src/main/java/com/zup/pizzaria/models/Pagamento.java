@@ -26,6 +26,70 @@ public class Pagamento {
     @NotNull(message = "A data e hora do pagamento não podem ser nulas.")
     private LocalDateTime dataHoraPagamento;
 
+    //Construtores
+    public Pagamento() {
+
+    }
+
+    public Pagamento(Long pedidoId, FormaPagamento formaPagamento, Double valorPago, LocalDateTime dataHoraPagamento) {
+        this.pedidoId = pedidoId;
+        this.formaPagamento = formaPagamento;
+        this.valorPago = valorPago;
+        this.dataHoraPagamento = dataHoraPagamento;
+
+    }
+
+    // Getters e Setters
+    public Long getId() {
+        return id;
+
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+
+    }
+
+    public Long getPedidoId() {
+        return pedidoId;
+
+    }
+
+    public void setPedidoId(Long pedidoId) {
+        this.pedidoId = pedidoId;
+
+    }
+
+    public FormaPagamento getFormaPagamento() {
+        return formaPagamento;
+
+    }
+
+    public void setFormaPagamento(FormaPagamento formaPagamento) {
+        this.formaPagamento = formaPagamento;
+
+    }
+
+    public Double getValorPago() {
+        return valorPago;
+
+    }
+
+    public LocalDateTime getDataHoraPagamento() {
+        return dataHoraPagamento;
+
+    }
+
+    public void setDataHoraPagamento(localDateTime dataHoraPagamento) {
+        this.dataHoraPagamento = dataHoraPagamento;
+
+    }
+
+
+
+
+
+
 
 
 
